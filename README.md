@@ -15,6 +15,10 @@ Rscript tests/run-tests.R
 
 The first command generates the dataset, fits the models, and prints the confusion matrix and tree rules. `Rscript scripts/preview.R` regenerates the example image above.
 
+## Hands-on ML walkthrough
+
+[Follow the model from pixels to predictions](docs/ml-walkthrough.md). Run `Rscript scripts/check-splits.R` to compare row-level and scene-level splits with equal test sizes.
+
 ## What the pipeline does
 
 1. **Generate images.** Start with 120 unique scenes made from geometric shapes and textures. Make nine versions of each scene across clean, blur, and highlight clipping. Vary the brightness and sensor noise between images.
